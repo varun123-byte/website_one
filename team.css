@@ -1,0 +1,161 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+body{
+  position: relative;
+  text-align: center;
+}
+ .responsive-container-block  h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.022em;
+  color: #0a3896;
+  padding: 0px 10px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+/**********team section starts here********/
+.responsive-cell-block {
+  min-height: 75px;
+  
+
+}
+
+.text-blk {
+  color: #003F51;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  max-width: 100%;
+  flex-wrap: wrap left;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.responsive-container-block .responsive-cell-block{
+  display: inline-block;
+}
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.team-head-text {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.container {
+  max-width: 1380px;
+  margin-bottom: 60px;
+
+}
+
+.card {
+  text-align: center;
+    box-shadow: rgb(0 0 0 / 13%) 0px 4px 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 11px;
+    background: #fffbfb;
+}
+
+.card-container {
+  width: 300px;
+  margin-top: 0px;
+  margin-right: 12px;
+  margin-bottom: 25px;
+  margin-left: 12px;
+  
+}
+
+.name {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.position {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+}
+
+.feature-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.social-icons {
+  width: 70px;
+  text-align: center;
+}
+.instagram-icon{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 2px;
+}
+.team-image-wrapper {
+  width: 261px;
+ 
+}
+
+.team-member-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 500px) {
+
+  .card-container {
+    width: 300px;
+    margin-bottom: 25px;
+    margin-right: 0px;
+    margin-left: -10px;
+  }
+}
+/*********footer starts here************/
+
+.logos div{
+    display: inline-block;
+    padding: 0% 2%;
+}
+.logos img{
+    height: 30px;
+    width: 30px;
+}
+@media screen and (max-width: 600px){
+   .footer{
+    font-size: x-small;
+   } 
+}

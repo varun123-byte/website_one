@@ -1,0 +1,304 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+  scroll-behavior: smooth;
+}
+body{
+  padding: 0px ;
+  margin: 0px;
+}
+
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+
+.loaders {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 100;
+  
+}
+
+.loader {
+  min-width: 100px;
+}
+
+/* circle loaders */
+
+.circle-loader-1 {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  border-top: 10px solid rgba(93, 113, 220, 0.2);
+  border-right: 10px solid rgba(93, 113, 220, 0.2);
+  border-bottom: 10px solid rgba(93, 113, 220, 0.2);
+  border-left: 10px solid rgba(93, 113, 220, 1);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: circle-loader-spin 1s infinite linear;
+  animation: circle-loader-spin 1s infinite linear;
+}
+
+@keyframes circle-loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+
+
+
+
+.header {
+
+    text-align: center;
+    align-items: center;
+}
+.header {
+    background-color:#12122e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 14%;
+}
+.header div a img{
+  width: 60%;
+  display: flex;
+  margin: 3% 0%;
+  
+}
+.header .vbitlogo{
+  margin-left: 2.0vw ;
+}
+.header .avklogo{
+display: flex;
+align-items: flex-end;
+margin-right: 2.5vw; 
+
+}
+.header .avklogo a{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+/******header ends here**********/
+/*       navbar starts here      */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar .main-logo {
+  width: 330px;
+  margin-left: 1.5vw ;
+
+}
+
+.navbar {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 2%;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  #0a3896;
+  position: relative;
+}
+
+.navbar .nav-header {
+  display: inline;
+}
+
+.navbar .nav-header .nav-logo {
+  display: inline-block;
+}
+
+.navbar .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+}
+@media only screen and (min-width: 1024px ) {
+  .navbar .nav-links{
+    margin-right: 2%;
+  }
+
+
+  
+}
+
+
+.navbar .nav-links a {
+  padding: 10px 12px;
+  text-decoration: none;
+  height: auto;
+  font-weight: 550;
+  color: white;
+}
+
+/* Hover effects */
+.navbar .nav-links a:hover {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  color: rgb(0, 0, 80);
+  transition: 0.4s ease-in;
+}
+.navbar .nav-links a:active {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  color: rgb(12, 12, 96);
+}
+
+/* responsive navbar toggle button */
+.navbar #nav-check,
+.navbar .nav-btn {
+  display: none;
+}
+
+@media (max-width:990px) {
+  .navbar {
+    height: 45px;
+    width: 100%;
+  }
+
+  .navbar .nav-btn {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .navbar .nav-btn label {
+    display: flex;
+    width: 50px;
+    padding-top: 9px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid #eee;
+  }
+
+  .navbar .nav-btn label:hover,
+  .navbar #nav-check:checked~.nav-btn label {
+    background-color: #0081c200;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .nav-links {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(12 12 96);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    right: 0px;
+  }
+
+  .navbar .nav-links a {
+    display: block;
+  }
+
+  /* when nav toggle button not checked */
+  .navbar #nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  /* when nav toggle button is checked */
+  .navbar #nav-check:checked~.nav-links {
+    height: 320px;
+    overflow-y: auto;
+  }
+
+  /* Text color */
+  .navbar .nav-links .drop-content a {
+    color: white;
+  }
+
+}
+
+/* Dropdown menu CSS code */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #0081c2;
+  min-width: 130px;
+  font-size: 16px;
+  top: 34px;
+  z-index: 1;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* on hover show dropdown */
+.dropdown:hover .drop-content,
+.dropdown2:hover .drop-content2 {
+  display: block;
+}
+
+/* drondown links */
+.drop-content a {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgb(197, 197, 250);
+  display: block;
+  transition: all 0.5s ease !important;
+}
+
+.dropBtn .drop-content a:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+/**********  nav ends here**********/
+.footer {
+    padding: 40px 0px ;
+    text-align: center;
+    color: white;
+    background-color: #12122e;
+    
+}
+.footer p{
+    font-size: 15px ;
+   
+}
+
+.logos div {
+    display: inline-block;
+    padding: 0px 7px ;
+}
+
+.logos img {
+    margin-top: 10px ;
+    width: 30px;
+}

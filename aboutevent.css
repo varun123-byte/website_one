@@ -1,0 +1,86 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: -0.022em;
+
+    color:#0a3896;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(26px + 0.5vw);
+    line-height: 150%;
+    letter-spacing: -0.022em;
+    /* color: orangered; */
+    color:#0a3896;
+    margin: 10px 0px;
+    /* font-family: 'Roboto', sans-serif!important; */
+
+}
+
+.about-content p {
+    margin: 19px 0px 10px 0px;
+    text-align: justify;
+    font-size: 24px;
+}
+.header img {
+    height: 10%;
+    width: 80%;
+}
+
+/* about content starts here */
+.hd-li {
+    padding: auto;
+}
+
+.pi-li {
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#list {
+    margin: 0px 0px 0px 18px  ;
+}
+
+@media only screen and (max-width:500px) {
+    .about-content {
+        margin: 0px 22px;
+        margin-bottom: 20px;
+        max-width: 100%;
+
+
+    }
+
+    .about-content p {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width:555px) {
+    .about-content p {
+        font-size: 21px;
+    }
+}
+
+
+
+/* about content ends here */
